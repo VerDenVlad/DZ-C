@@ -27,6 +27,31 @@ if (num == 5)
 
 else if (num < 5) Console.WriteLine($"{number} - Вы ввели меньше 5 знаков"); //закомментировать
     else Console.WriteLine($"{number} - Вы ввели больше 5 знаков"); //закомментировать
+
+
+//Или еще вариант решения.
+
+ Console.Write("Введите число: ");
+        int number = int.Parse(Console.ReadLine());
+
+        bool isPalindrome = true;
+        for (int i = 0; i < number / 2; i++)
+        {
+            if (number % 10 != number % 2)
+            {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        if (isPalindrome)
+        {
+            Console.WriteLine("Число является палиндромом");
+        }
+        else
+        {
+            Console.WriteLine("Число не является палиндромом");
+        }
 */
 
 /* Задача 21 - Напишите программу, которая принимает на вход координаты двух точек 
@@ -59,8 +84,8 @@ Console.Write("Введите координаты z2: ");
 double z2 = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Расстояние составляет {0:f2}", Distance (x1, y1, z1, x2, y2, z2));
-
 */
+
 
 /* Задача 23 - Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
