@@ -35,7 +35,7 @@ else if (num < 5) Console.WriteLine($"{number} - Вы ввели меньше 5 
         int number = int.Parse(Console.ReadLine());
 
         bool isPalindrome = true;
-        for (int i = 0; i < number / 2; i++)
+        for (int i = 0; i < number; i++) //(int i = 0; i < number / 2; i++)
         {
             if (number % 10 != number % 2)
             {
