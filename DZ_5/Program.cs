@@ -6,18 +6,18 @@
 
 int size = 5;
 int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
-PrintArray(numbers);
+RandNumb(numbers);
+NumbArray(numbers);
 
-int countEvenNumbers = 0;
+int count = 0;
 
 for (int i = 0; i < numbers.Length; i++)
 {
-    if (numbers[i] % 2 == 0) countEvenNumbers ++;
+    if (numbers[i] % 2 == 0) count ++;
 }
-Console.Write(countEvenNumbers);
+Console.Write("Четных чисел в массиве: " +count);
 
-void FillArrayRandomNumbers(int[] array)
+void RandNumb(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -25,7 +25,7 @@ void FillArrayRandomNumbers(int[] array)
     }
 }
 
-void PrintArray(int[] array)
+void NumbArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -34,7 +34,7 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-//*/
+*/
 
 /*Задача 36: Задайте одномерный массив, заполненный случайными числами. 
 Найдите сумму элементов, стоящих на нечётных позициях.
@@ -47,18 +47,18 @@ void PrintArray(int[] array)
 
 int size = 5;
 int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
-PrintArray(numbers);
+RandNumb(numbers);
+NumbArray(numbers);
 
-int sumNumbersEvenIndex = 0;
+int sumNumb = 0;
 
 for (int i = 1; i < numbers.Length; i += 2)
 {
-    sumNumbersEvenIndex += numbers[i];
+    sumNumb+= numbers[i];
 }
-Console.Write(sumNumbersEvenIndex);
+Console.Write("Сумма элементов = " +sumNumb);
 
-void FillArrayRandomNumbers(int[] array)
+void RandNumb(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -66,7 +66,7 @@ void FillArrayRandomNumbers(int[] array)
     }
 }
 
-void PrintArray(int[] array)
+void NumbArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -75,7 +75,7 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-*/
+//*/
 
 /*Задача 38: Задайте массив вещественных чисел. 
 Найдите разницу между максимальным и минимальным элементов массива.
@@ -83,7 +83,6 @@ void PrintArray(int[] array)
 
 
 Решение
-*/
 
 
 Console.Write ("Введите размер массива: ");
@@ -133,3 +132,4 @@ double max = Convert.ToInt32(Console.ReadLine());
 double[] myArray = RandMas (size, min, max); 
 WriteArray(myArray);
 Console.WriteLine("Разница между min и max: " + (Math.Round(MinMax(myArray), 2)));
+*/
